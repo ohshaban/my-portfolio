@@ -12,6 +12,8 @@
 
 (function($) {
 
+    $('#copyright').html(`Copyright &copy; ${(new Date()).getFullYear()} OMAR HILAL SHABAN`);
+
     // Remove no-js class
     $('html').removeClass('no-js');
 
