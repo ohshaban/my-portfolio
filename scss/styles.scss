@@ -34,7 +34,8 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+// $base-color: #3498db;
+$base-color: #26A69A;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -350,7 +351,10 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    // background: url(../images/lead-bg2.jpg);
+    background: url(../images/lead-bg3.jpg);
+    background-position: 0% 66%;
+    // transform: translateY(-50%);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -361,6 +365,7 @@ footer {
     z-index: 10;
     top: 50%;
     left: 50%;
+    width:100%;
     transform: translate(-50%, -50%);
     text-align: center;
 
@@ -641,6 +646,17 @@ footer {
     }
 }
 
+#publications {
+    padding: 50px 15px;
+    border-bottom: 1px solid $border;
+    text-align: center;
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+}
+
 .project {
     position: relative;
     max-width: 900px;
@@ -658,8 +674,9 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 300px;
-    padding: 15px;
+    // margin-left: 300px;
+    padding: 20px;
+    text-align: left;
 
     h3 {
         font-size: 1.5em;
